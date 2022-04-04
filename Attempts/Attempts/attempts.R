@@ -72,7 +72,7 @@ filenames <- c("2.xlsx", "3.xlsx", "4.xlsx", "5.xlsx",
                "16.xlsx", "17.xlsx", "18.xlsx", "19.xlsx", "20.xlsx")
 
 #for each file 
-#for(filename in filenames) = define a variable so that you take a single file everytime you run the for loop
+#for(filename in filenames) = define a variable so that you can take a single file everytime you run the for loop
 #rbind is a function that you can use in R in order to bind different dataframes
 for (filename in filenames) {
   participantsidattempts <- rbind(participantsidattempts, create_dataframe(filename))
